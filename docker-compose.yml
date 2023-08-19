@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  php_apache:
-    image: mdobydullah/anyxel-pg-file-upload:1.0
+  app:
+    image: anyxel/pg-file-upload:latest
     build:
       context: .
       dockerfile: ./.docker/php-apache.dockerfile

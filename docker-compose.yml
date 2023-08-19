@@ -8,5 +8,6 @@ services:
       dockerfile: ./.docker/php-apache.dockerfile
     volumes:
         - ./app:/var/www/html:delegated
+        - ./cron/cron.log:/var/log/cron.log:delegated
     ports:
       - 80:80

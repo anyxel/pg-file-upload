@@ -2,7 +2,7 @@
 // turn off all error reporting
 error_reporting(0);
 
-$appUrl = "https://upload.pg.anyxel.com/uploads/";
+$appUrl = "https://fupload-pg.anyxel.com/uploads/";
 $success = false;
 $message = "No file found to upload!";
 $fileUrl = null;

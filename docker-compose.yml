@@ -1,0 +1,19 @@
+version: '3.9'
+name: anyxel-pg-file-upload
+services:
+  php_apache:
+    build:
+      context: .
+      dockerfile: ./.docker/php-apache.dockerfile
+    container_name: php_apache
+    volumes:
+        - ./app:/var/www/html:delegated
+    networks:
+        - anyxel
+    ports:
+      - 80:80
+
+# networks
+networks:
+    anyxel:
+        driver: bridge
